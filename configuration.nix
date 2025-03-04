@@ -40,6 +40,8 @@
     lua
     pfetch
     wget
+    fish
+    zsh
   ];
   
  programs.nix-ld = {
