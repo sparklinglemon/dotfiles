@@ -43,10 +43,20 @@
     fish
     zsh
   ];
+
+
+programs.fish.enable = true;
   
  programs.nix-ld = {
     enable = true;
     package = pkgs.nix-ld-rs; # only for NixOS 24.05
 };
+
+
+ # Set the default shell for 'nixos' user
+  users.users.nixos = {
+    shell = pkgs.fish;
+    isNormalUser = true; # this is usually already present in NixOS-WSL
+  };
   
 }
