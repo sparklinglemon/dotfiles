@@ -42,6 +42,8 @@
     wget
     fish
     zsh
+    tomcat10
+    docker-compose
   ];
 
 

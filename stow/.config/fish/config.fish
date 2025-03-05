@@ -9,5 +9,6 @@ if status is-interactive
 
     #alias
     alias work="cd /mnt/d/work/"
+    alias rebuild="sudo nixos-rebuild switch --flake ~/dotfiles"
 
 end
