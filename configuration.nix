@@ -61,6 +61,9 @@ programs.fish.enable = true;
   users.users.nixos = {
     shell = pkgs.fish;
     isNormalUser = true; # this is usually already present in NixOS-WSL
+    extraGroups = [ "docker" ];
   };
+
+virtualisation.docker.enable = true;
   
 }
