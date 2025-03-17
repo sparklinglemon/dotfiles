@@ -44,6 +44,8 @@
     zsh
     tomcat10
     docker-compose
+    maven
+    jdk23
   ];
 
 
