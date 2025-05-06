@@ -45,7 +45,7 @@
     tomcat10
     docker-compose
     maven
-    jdk23
+    jdk11
   ];
 
 
