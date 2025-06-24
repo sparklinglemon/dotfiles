@@ -37,13 +37,15 @@
     gnumake
     gh
     nodejs_23
+    typst
     lua
     pfetch
     wget
     fish
+    docker-compose
+    mpd
     zsh
     tomcat10
-    docker-compose
     maven
     jdk11
   ];
