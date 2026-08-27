@@ -1,0 +1,13 @@
+{
+  "theme": "dark",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.5",
+  "defaultThinkingLevel": "low",
+  "hideThinkingBlock": false,
+  "packages": [
+    "npm:@burneikis/pi-vim",
+    "npm:pi-web-search",
+    "git:github.com/aporcelli/pi-usage",
+    "../packages/statusline"
+  ]
+}
