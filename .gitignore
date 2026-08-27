@@ -1,0 +1,5 @@
+stow/.config/gh/hosts.yml
+
+# Pi: keep portable settings only; never commit auth, sessions, caches, installed packages, or model stores.
+stow/.pi/agent/*
+!stow/.pi/agent/settings.json
