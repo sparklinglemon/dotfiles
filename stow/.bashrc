@@ -123,3 +123,16 @@ export NVM_DIR="$HOME/.nvm"
 # Dotfiles aliases
 alias rebuild='sudo nixos-rebuild switch --flake ~/dotfiles/'
 export PATH="$HOME/.local/bin:$PATH"
+
+# Pi
+export PATH="$HOME/.npm-global/bin:$PATH"
+
+
+# Added by Antigravity CLI installer
+export PATH="$HOME/.local/bin:$PATH"
+
+# Android development toolchain (installed 2026-08-21)
+export JAVA_HOME="$HOME/android-dev/jdk"
+export ANDROID_HOME="$HOME/android-dev/sdk"
+export ANDROID_SDK_ROOT="$HOME/android-dev/sdk"
+export PATH="$JAVA_HOME/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$HOME/android-dev/gradle/current/bin:$PATH"

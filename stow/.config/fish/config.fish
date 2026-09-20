@@ -12,3 +12,7 @@ if status is-interactive
     alias rebuild="sudo nixos-rebuild switch --flake ~/dotfiles"
 
 end
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "$HOME/.local/bin" $PATH
