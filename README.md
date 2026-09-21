@@ -9,6 +9,7 @@ Personal dotfiles for `sparklinglemon`, managed with GNU Stow and intended to be
 - tmux config
 - GitHub CLI preferences, excluding account/auth state
 - Pi portable settings and package declarations
+- Claude Code global instructions (`CLAUDE.md`) and statusline script
 - Nix/NixOS flake files: `flake.nix`, `flake.lock`, `configuration.nix`
 
 ## What is intentionally excluded
@@ -17,6 +18,7 @@ Secrets and machine/session-specific state should not be committed. This include
 
 - GitHub CLI auth/account state: `stow/.config/gh/hosts.yml`
 - Pi auth, sessions, model cache, installed npm packages, and runtime state
+- Claude Code credentials, history, sessions, caches, logs, and other runtime state
 - Tokens, API keys, private credentials, local history, or generated caches
 
 ## Install on a new machine
@@ -54,6 +56,17 @@ pi update --extensions
 ```
 
 Do not commit Pi runtime files such as `auth.json`, `sessions/`, `models-store.json`, or `npm/`.
+
+## Claude Code setup
+
+Portable Claude Code configuration is stored at:
+
+```text
+stow/.claude/CLAUDE.md
+stow/.claude/statusline-command.sh
+```
+
+`CLAUDE.md` holds global agent instructions (`~/.claude/CLAUDE.md`), and `statusline-command.sh` is the script referenced by `statusLine` in `~/.claude/settings.json`. Do not commit the rest of `~/.claude`, such as `.credentials.json`, `history.jsonl`, `sessions/`, `projects/`, `cache/`, or logs.
 
 ## Notes
 
