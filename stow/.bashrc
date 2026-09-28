@@ -125,11 +125,11 @@ alias rebuild='sudo nixos-rebuild switch --flake ~/dotfiles/'
 export PATH="$HOME/.local/bin:$PATH"
 
 # Pi
-export PATH="/home/rue/.npm-global/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
 
 
 # Added by Antigravity CLI installer
-export PATH="/home/rue/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Android development toolchain (installed 2026-08-21)
 export JAVA_HOME="$HOME/android-dev/jdk"

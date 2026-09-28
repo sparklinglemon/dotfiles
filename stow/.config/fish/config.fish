@@ -15,4 +15,4 @@ end
 
 
 # Added by Antigravity CLI installer
-set -gx PATH "/home/rue/.local/bin" $PATH
+set -gx PATH "$HOME/.local/bin" $PATH
