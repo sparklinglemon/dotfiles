@@ -5,3 +5,6 @@ stow/.claude/*
 
 # tmux plugins are installed by tpm on first start.
 stow/.config/tmux/plugins/
+
+# fish rewrites this file with machine-local state.
+stow/.config/fish/fish_variables
