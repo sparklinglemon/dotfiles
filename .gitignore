@@ -2,3 +2,6 @@
 stow/.claude/*
 !stow/.claude/CLAUDE.md
 !stow/.claude/statusline-command.sh
+
+# tmux plugins are installed by tpm on first start.
+stow/.config/tmux/plugins/

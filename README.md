@@ -6,7 +6,8 @@ Personal dotfiles for `sparklinglemon`, managed with GNU Stow and intended to be
 
 - Shell startup files: `.bashrc`, `.bash_profile`
 - Fish shell config and prompt
-- tmux config
+- tmux config (plugins are installed by tpm on first start)
+- Neovim config: submodule pointing to `sparklinglemon/kickstart.nvim`
 - Claude Code global instructions (`CLAUDE.md`) and statusline script
 - Nix/NixOS flake files: `flake.nix`, `flake.lock`, `configuration.nix`
 - Windows-side configs (not stowed): WezTerm (`.wezterm.lua`) and kanata (`kanata.kbd`)
@@ -21,12 +22,20 @@ Secrets and machine/session-specific state should not be committed. This include
 ## Install on a new machine
 
 ```bash
-git clone https://github.com/sparklinglemon/dotfiles.git ~/dotfiles
+git clone --recurse-submodules https://github.com/sparklinglemon/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow --no-folding -d ~/dotfiles -t ~ stow
 ```
 
 Use `--no-folding` so Stow symlinks individual files instead of whole directories. This prevents applications from writing runtime/session data back into the repo.
+
+If the repo was cloned without `--recurse-submodules`, fetch the Neovim config with:
+
+```bash
+git submodule update --init
+```
+
+To pull the latest Neovim config later, run `git submodule update --remote` and commit the new submodule pointer.
 
 ## Claude Code setup
 
