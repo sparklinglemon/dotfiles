@@ -7,9 +7,6 @@ This repository is `sparklinglemon/dotfiles`. It stores personal dotfiles manage
 Important files and directories:
 
 - `stow/` — files that are symlinked into `$HOME` with GNU Stow.
-- `stow/.pi/agent/settings.json` — portable Pi settings and package declarations.
-- `stow/.config/gh/config.yml` — GitHub CLI preferences that are safe to share.
-- `stow/.config/gh/hosts.yml` — GitHub CLI account/auth state; must remain ignored and untracked.
 - `configuration.nix`, `flake.nix`, `flake.lock` — Nix/NixOS configuration files.
 - `windows/` - Windows host configs (WezTerm, kanata) installed with `windows/install.ps1`, not stowed.
 - `README.md` — user-facing setup instructions.
@@ -18,10 +15,7 @@ Important files and directories:
 ## Rules for agents
 
 - Do not commit secrets, tokens, auth files, machine-local caches, or session/history context.
-- Do not commit Pi runtime data such as `auth.json`, `sessions/`, `models-store.json`, `npm/`, installed package contents, logs, or caches.
-- Keep Pi setup reproducible by committing portable configuration in `stow/.pi/agent/settings.json`.
-- If Pi packages/extensions are installed with `pi install`, ensure the resulting package declaration is represented in `stow/.pi/agent/settings.json` when it is meant to be reused across machines.
-- Keep `stow/.config/gh/hosts.yml` ignored and untracked.
+- Do not add Pi or GitHub CLI (`gh`) config to this repo.
 - Avoid committing generated files unless they are intentionally part of the reproducible setup.
 - Preserve existing unstaged user changes unless explicitly asked to modify them.
 
