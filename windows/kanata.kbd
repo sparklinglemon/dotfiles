@@ -1,0 +1,16 @@
+(defcfg
+  process-unmapped-keys yes
+)
+(defsrc
+  caps  h j k l r u e i w o t y ralt  home
+)
+(defalias
+  capsmod (tap-hold 150 150 esc (layer-toggle vimnav))
+  raltmod (layer-toggle vimnav)
+)
+(deflayer default
+  @capsmod  h j k l r u e i w o t y @raltmod  M-A-k
+)
+(deflayer vimnav
+  _  left down up right S-9 S-0 S-[ S-] [ ] + = _  M-A-k
+)

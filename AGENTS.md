@@ -11,6 +11,7 @@ Important files and directories:
 - `stow/.config/gh/config.yml` — GitHub CLI preferences that are safe to share.
 - `stow/.config/gh/hosts.yml` — GitHub CLI account/auth state; must remain ignored and untracked.
 - `configuration.nix`, `flake.nix`, `flake.lock` — Nix/NixOS configuration files.
+- `windows/` - Windows host configs (WezTerm, kanata) installed with `windows/install.ps1`, not stowed.
 - `README.md` — user-facing setup instructions.
 - `CLAUDE.md` — symlink to this file.
 
